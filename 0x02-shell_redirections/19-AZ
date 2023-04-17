@@ -1,1 +1,2 @@
 #!/bin/bash
+echo "acknowledge" | tr "Ac" "Ze"
