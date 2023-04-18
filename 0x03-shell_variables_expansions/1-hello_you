@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello $user"
+user=root@8098020156e3 | echo "hello $user"
