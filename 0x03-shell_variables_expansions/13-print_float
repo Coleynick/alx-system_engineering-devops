@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "Number: %.2f\n" "$num" 
+printf "Number: %.2f\n" "$NUM" 
