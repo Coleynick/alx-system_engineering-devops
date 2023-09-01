@@ -3,6 +3,6 @@
 dir="$(ls)"
 for i in $dir
 do
-	list=$(echo "$item"| cut -d '-' -f 2-)
+	list=$(echo "$i"| cut -d '-' -f 2-)
 	echo "$list"
 done
