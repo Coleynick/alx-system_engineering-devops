@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A bash script
+dir="$(ls)"
+for i in $dir
+do
+	list=$(echo "$item"| cut -d '-' -f 2-)
+	echo "$list"
+done
