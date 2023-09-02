@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#infinite & kill
+clean() {
+    echo "Cleaning up and terminating..."
+    rm -f /var/run/myscript.pid
+    exit 0
+}
+term() {
+    echo "I hate the kill command"
+}
+interupt() {
+    echo "Y U no love me?!"
+}
+trap 'clean' SIGQUIT SIGTERM
+trap 'term' SIGTERM
+trap 'interupt' SIGINT
+echo $$ > /var/run/myscript.pid
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
