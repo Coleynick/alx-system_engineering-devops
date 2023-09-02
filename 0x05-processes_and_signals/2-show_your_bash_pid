@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script - a list of curr running proc
+ps -aux --forest | grep bash
