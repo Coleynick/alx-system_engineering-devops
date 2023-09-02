@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#infinite & kill
+pid=$(pgrep -f 7-highlander)
+kill -9 "$pid"
