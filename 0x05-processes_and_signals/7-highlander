@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#infinite & kill
+_func() {
+  echo "I am invincible!!!"
+}
+trap _func SIGTERM
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
